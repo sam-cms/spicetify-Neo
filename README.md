@@ -18,39 +18,39 @@ You can add your own theme simply by opening a Pull Request (more info in [CONTR
 
 1.  Clone this repository. Make sure [git](https://git-scm.com/) is installed and run:
     ```bash
-    git clone --depth=1 https://github.com/spicetify/spicetify-themes.git 
+    git clone --depth=1 https://github.com/sam-cms/spicetify-Neo.git 
     ```
 
-2.  Copy the files into the [Spicetify Themes folder](https://spicetify.app/docs/development/themes). Run:
+2.  For mac an Linux, copy the files into the [Spicetify Themes folder](https://spicetify.app/docs/development/themes). Run:
 
-    **Linux**
+    **MacO & Linux**
 
     ```bash
-    cd spicetify-themes
+    cd spicetify-Neo
     cp -r * ~/.config/spicetify/Themes
+
     ```
-
-    **MacOS**
-
+    **For windows**
     ```bash
-    cd spicetify-themes
-    cp -r * ~/.config/spicetify/Themes
-    ```
-
-    **Windows**
-
-    ```powershell
     cd spicetify-themes
     cp * "$(spicetify -c | Split-Path)\Themes\" -Recurse
+
     ```
+
 
 3.  Choose which theme to apply just by running:
     ```bash
-    spicetify config current_theme THEME_NAME
+    # Neopunk
+    spicetify config current_theme Neopunk
+    spicetify config color_scheme Neopunk
+    spicetify apply
     ```
-    Some themes have 2 or more different color schemes. After selecting the theme you can switch between them with:
+    You can also apply another Neo green theme by running:
     ```bash
-    spicetify config color_scheme SCHEME_NAME
+    # Neogreen
+    spicetify config current_theme Neogreen
+    spicetify config color_scheme Neogreen
+    spicetify apply
     ```
 
 ### Extra
